@@ -1,93 +1,53 @@
-🧠 AI-Powered LaTeX Code Generator
-An intelligent web-based application that converts natural language prompts into LaTeX code using Google Gemini API, with real-time rendering and a modern interactive UI.
+# 🧠 AI-Powered LaTeX Code Generator
 
-🚀 Features
-🔹 Convert plain English into valid LaTeX code
-🔹 Real-time LaTeX rendering and preview
-🔹 Clean and responsive UI with animations
-🔹 Powered by Google Gemini API
-🔹 Backend built using Flask
-🔹 Frontend built using HTML, CSS & JavaScript
-🔹 Deployed using Vercel
-🔹 Supports equations, integrals, symbols & math expressions
+An intelligent, web-based application that converts natural language prompts into valid LaTeX code using the Google Gemini API. It features real-time rendering and a modern, interactive user interface designed for students, researchers, and developers.
 
-🛠️ Tech Stack
-Frontend:
-HTML5
-CSS3
-JavaScript
-MathJax (for rendering equations)
+🔗 **[Live Demo](https://latex-code-generator.vercel.app)**
 
-Backend:
-Python
-Flask
-Google Gemini API
+---
 
-Deployment:
-Vercel
-REST API architecture
+## 🚀 Features
 
+* **Natural Language Processing:** Convert plain English prompts into highly accurate LaTeX expressions.
+* **Real-Time Rendering:** Instantly preview rendered equations as you type or generate them, powered by MathJax.
+* **Modern Interactive UI:** A clean, responsive design featuring smooth CSS animations and intuitive layouts.
+* **Robust Backend:** Built with a lightweight Python Flask architecture integrated with the Google Gemini API.
+* **Serverless Deployment:** Fully optimized for seamless, cost-effective hosting on Vercel.
+* **Comprehensive Math Support:** Handles equations, integrals, matrices, Greek symbols, and complex math formulas.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+* **HTML5 & CSS3:** For semantic structure and elegant responsive styling.
+* **JavaScript (ES6+):** Manages asynchronous API calls and interactive UI states.
+* **MathJax:** Client-side JavaScript engine for crisp rendering of LaTeX math strings.
+
+### Backend
+* **Python:** Main application language.
+* **Flask:** Lightweight WSGI web application framework.
+* **Google Gemini API:** LLM integration for interpreting natural language and generating syntax-accurate LaTeX.
+
+### Deployment & Architecture
+* **Vercel:** Hosted as a combination of Static Frontend assets and Python Serverless Functions.
+* **REST API:** Clean separation of concerns between client requests and AI generation endpoints.
+
+---
+
+## 📁 Project Structure
+
+```text
 AI-LaTeX-Generator/
 │
 ├── api/
-│   └── index.py           # Flask backend (Gemini API integration)
+│   └── index.py          # Flask backend (Gemini API integration & Serverless entrypoint)
 │
 ├── frontend/
-│   ├── index.html         # UI layout
-│   ├── style.css          # Styling
-│   ├── script.js          # Client-side logic
+│   ├── index.html        # Main UI layout
+│   ├── style.css         # Custom animations and application layout
+│   └── script.js         # API communication and MathJax orchestration
 │
-├── requirements.txt       # Python dependencies
-├── vercel.json            # Deployment config
-└── README.md
-
-⚙️ How It Works:
-
-* User enters a prompt (e.g., "Integral of x²")
-*Request is sent to the Flask backend
-*Gemini API generates LaTeX code
-*Code is returned and rendered using MathJax
-*Output is displayed in real-time
-
-🧪 Example Input
-Show the integral of x squared
-
-Output
-\int x^2 dx = \frac{x^3}{3} + C
-
-🖥️ Installation & Setup
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/ai-latex-generator.git
-cd ai-latex-generator
-
-2️⃣ Install Dependencies
-pip install -r requirements.txt
-
-3️⃣ Set Gemini API Key
-export GEMINI_API_KEY=your_api_key_here
-
-4️⃣ Run the App
-python api/index.py
-
-
-🌐 Deployment:
-The project is deployed using Vercel with:
-Backend: Python Serverless Functions
-Frontend: Static Hosting
-
-📌 Key Highlights
-
-✔ Natural language → LaTeX conversion
-✔ Clean UI with animations
-✔ Real-time rendering
-✔ Cloud-deployed
-✔ Beginner-friendly & scalable
-
-**Preview link: latex-code-generator.vercel.app
-
-👨‍💻 Author
-
-Arif Mondal
-🎓 B.Tech CSE (AI & ML)
-🏫 Institute of Engineering & Management, Kolkata
-💡 AI | ML | Cloud | Python
+├── requirements.txt      # Python dependencies
+├── vercel.json           # Vercel serverless deployment configuration
+└── README.md             # Project documentation
