@@ -83,6 +83,8 @@ Frontend: Static Hosting
 ✔ Cloud-deployed
 ✔ Beginner-friendly & scalable
 
+**Preview link: "latex-code-generator.vercel.app"
+
 👨‍💻 Author
 
 Arif Mondal
